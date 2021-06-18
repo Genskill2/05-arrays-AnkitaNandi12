@@ -2,7 +2,8 @@
 /*Q1. Program to find largest integer in array*/
 #include <stdio.h>
 int max(int [], int);
-
+int min(int [], int);
+float avg(int [], int);
 int main(void)
 {
   int x[] = {9,5,6,10,2,-3,4};
