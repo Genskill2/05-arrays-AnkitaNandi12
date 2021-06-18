@@ -7,7 +7,6 @@ int main(void)
 {
   int x[] = {9,5,6,10,2,-3,4};
   int n = sizeof(x)/sizeof(x[0]);
-  printf("No:%d\n",n);
   int y = max(x,n);
   printf("The largest integer in the array is: %d",y);
   return 0;
