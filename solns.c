@@ -22,3 +22,15 @@ int max(int x[], int n)
   }
     return x[0];
 }
+/* Q2. Program to find smallest integer in array*/
+int min(int x[], int n)
+{
+    for (int i = 1; i < n; ++i) 
+    {
+    if (x[0] > x[i]) 
+    {
+        x[0] = x[i];
+    }
+  }
+    return x[0];
+}
