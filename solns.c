@@ -13,7 +13,7 @@ int main(void)
 }
 int max(int x[], int n)
 {
-    for (int i = 1; i < n; ++i) 
+    for (int i = 1; i <= n; i++) 
     {
     if (x[0] < x[i]) 
     {
@@ -25,7 +25,7 @@ int max(int x[], int n)
 /* Q2. Program to find smallest integer in array*/
 int min(int x[], int n)
 {
-    for (int i = 1; i < n; ++i) 
+    for (int i = 1; i <= n; i++) 
     {
     if (x[0] > x[i]) 
     {
@@ -33,4 +33,16 @@ int min(int x[], int n)
     }
   }
     return x[0];
+}
+/* Q3. Program to find average of array*/
+float avg(int x[], int n)
+{
+    float y = 0;
+    float res;
+    for (int i = 0; i < n; i++) 
+    {
+    y = y+x[i];
+    }
+    res = y/n;
+    return res;
 }
