@@ -13,15 +13,12 @@ int main(void)
 }
 int max(int x[], int n)
 {
-    int z, res;
-    for(int i =0; i<n; i++)
+    for (int i = 1; i < n; ++i) 
     {
-        for(int j=0 ; j<n-i; j++)
-        {
-        if(x[i]>x[j])
-         z = x[i];
-        }
-        res = z;
+    if (x[0] < x[i]) 
+    {
+        x[0] = x[i];
     }
-    return res;
+  }
+    return x[0];
 }
